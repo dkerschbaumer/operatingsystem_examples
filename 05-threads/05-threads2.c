@@ -27,7 +27,7 @@ int main()
   printf("Hello, I'm the main-Thread\n");
 
   pthread_t ids[100];
-  for(int i = 0; i < 10; i++)
+  for(int i = 0; i < 100; i++)
   {
     pthread_create(&ids[i], NULL, runFunction, NULL);
   }
